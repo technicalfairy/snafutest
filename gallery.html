@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="gallery.css">
 </head>
 <body>
-    <a href="index.html"><img src="images/history17.png" alt="Home" class="home-button"></a>
+    <a href="index.html"><img src="https://snafucontent.s3.amazonaws.com/images/history17.png" alt="Home" class="home-button"></a>
     <div class="background"></div>
     <div class="container">
         <div class="gallery-content">
@@ -27,7 +27,7 @@
         for (let i = 1; i <= 154; i++) {
             let fileType = (i <= 102) ? 'gif' : 'png';
             let imgElement = document.createElement('img');
-            imgElement.src = `images/gallery/gallery${i}.${fileType}`;
+            imgElement.src = `https://snafucontent.s3.amazonaws.com/images/gallery/gallery${i}.${fileType}`;
             imgElement.alt = `Gallery ${i}`;
             imgElement.classList.add('gallery-image');
             galleryGrid.appendChild(imgElement);
