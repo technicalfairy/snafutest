@@ -1,0 +1,290 @@
+body {
+    font-family: 'futura-pt', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: rgb(230, 230, 230);
+    text-align: center;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/background.png') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0; /* Add some padding to each box */
+    box-sizing: border-box;
+}
+
+.top-orange {
+    flex: 0 1 auto;
+}
+
+.top-dark-pink {
+    flex: 0 1 auto;
+}
+
+.top-purple {
+    flex: 0 1 auto;
+}
+
+.blue-section {
+    display: flex;
+    width: 100%;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0; /* Add some padding to each section */
+    box-sizing: border-box;
+    position: relative;
+}
+
+.svg-container-blue {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-blue-svg {
+    width: 90%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.middle-blue {
+    position: absolute;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    pointer-events: none; /* To ensure the image doesn't interfere with the SVG */
+}
+
+.bottom-orange {
+    flex: 0 1 auto;
+}
+
+.bottom-yellow {
+    flex: 0 1 auto;
+    display: flex;
+    justify-content: space-between; /* Align items to the edges */
+    align-items: center;
+    padding: 0px 0;
+    box-sizing: border-box;
+}
+
+.left-yellow {
+    width: 30%;
+    text-align: left; /* Align text to the left */
+    padding-left: 20px; /* Add some padding to the left */
+}
+
+.middle-yellow {
+    width: 30%;
+    text-align: center;
+}
+
+.right-yellow {
+    width: 30%;
+    text-align: right; /* Align text to the right */
+    padding-right: 20px; /* Add some padding to the right */
+}
+
+/* Specific text element classes for each box */
+.now-only-on-solana {
+    font-family: 'ltc-flash', sans-serif;
+    font-size: 2.1vw;
+    margin: 0;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    
+}
+
+.situation-normal {
+    font-family: 'franklin-gothic-atf', sans-serif;
+    font-size: 4.3vw;
+    font-weight: 900;
+    margin-top: -1%;
+    margin-bottom: 0%;
+}
+
+.svg-container {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    max-width: 90%;
+    
+}
+
+.svg-item {
+    height: 7vw;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.meaning-of-life {
+    font-family: 'ltc-flash', sans-serif;
+    font-size: 2.1vw; /* Adjust font size to be relative to the viewport width */
+    margin: 0;
+    margin-top: -1%;
+    margin-bottom: -1%;
+    
+}
+
+.solscan-link {
+    font-family: 'futura-pt', sans-serif;
+    font-size: 1vw; /* Adjust font size to be relative to the viewport width */
+    font-weight: 500;
+    margin: 0;
+    text-align: left;
+    color: rgb(230, 230, 230); /* Set text color to white */
+    text-decoration: underline; /* Ensure text is underlined */
+}
+
+.find-us-on {
+    font-family: 'futura-pt', sans-serif;
+    font-size: 1vw; /* Adjust font size to be relative to the viewport width */
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+    color: rgb(230, 230, 230); /* Set text color to white */
+    text-decoration: underline; /* Ensure text is underlined */
+}
+
+.snafu-gif {
+    width: 90%;
+    max-width: 600px;
+    height: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+#snafu-image {
+    width: 90%;
+    max-width: 600px;
+    height: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+#dog-image {
+    width: 2vw;
+    margin: 0;
+    margin-top: -3%;
+}
+
+.play-button {
+    position: absolute;
+    top: 1.75vh;
+    right: 1.2vw;
+    width: 5vw;
+    height: 5vw;
+    background-color: transparent;
+    border: none;
+    font-size: 3vw;
+    color: white;
+    z-index: 3;
+    cursor: pointer;
+    
+    text-decoration: none;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    .now-only-on-solana, .situation-normal {
+        font-size: 1.5em;
+    }
+
+    .svg-item {
+        width: 80px;
+    }
+
+    .left-blue, .right-blue {
+        width: 25%;
+    }
+
+    .middle-blue {
+        width: 30%;
+    }
+}
+
+@media (max-width: 600px) {
+    .now-only-on-solana, .situation-normal {
+        font-size: 1.2em;
+    }
+
+    .svg-item {
+        width: 60px;
+    }
+
+    .left-blue, .right-blue {
+        width: 30%;
+    }
+
+    .middle-blue {
+        width: 40%;
+    }
+
+    #snafu-image {
+        max-width: 150px;
+    }
+
+    .left-yellow, .middle-yellow, .right-yellow {
+        width: 33.33%;
+    }
+}
+
+@media (max-width: 400px) {
+    .now-only-on-solana, .situation-normal {
+        font-size: 1em;
+    }
+
+    .svg-item {
+        width: 50px;
+    }
+
+    .left-blue, .right-blue {
+        width: 35%;
+    }
+
+    .middle-blue {
+        width: 30%;
+    }
+
+    #snafu-image {
+        max-width: 150px;
+    }
+
+    .left-yellow, .middle-yellow, .right-yellow {
+        width: 33.33%;
+    }
+}

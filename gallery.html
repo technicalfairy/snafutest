@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - SNAFU Project</title>
+    <!-- Adobe Fonts Code Snippet -->
+    <link rel="stylesheet" href="https://use.typekit.net/twt0eyp.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <a href="index.html"><img src="images/history17.png" alt="Home" class="home-button"></a>
+    <div class="background"></div>
+    <div class="container">
+        <div class="gallery-content">
+            <h1 class="history-title2 ink-bleed"><span class="flash-font">RICK-CLICK SAVE ME!</span></h1>
+            <h1 class="history-title ink-bleed"><span class="gothic-font smaller-story">GALLERY</span></h1>
+            <p class="links-of2 ink-bleed">of</p>
+            <h3 class="links-main-title ink-bleed">$SNAFU</h3>
+            <div class="gallery-grid"></div>          
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        const galleryGrid = document.querySelector('.gallery-grid');
+        for (let i = 1; i <= 154; i++) {
+            let fileType = (i <= 102) ? 'gif' : 'png';
+            let imgElement = document.createElement('img');
+            imgElement.src = `images/gallery/gallery${i}.${fileType}`;
+            imgElement.alt = `Gallery ${i}`;
+            imgElement.classList.add('gallery-image');
+            galleryGrid.appendChild(imgElement);
+        }
+    </script>
+
+</body>
+</html>

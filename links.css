@@ -1,0 +1,119 @@
+body {
+    font-family: 'futura-pt', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: rgb(230, 230, 230);
+    text-align: center;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/background.png') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.home-button {
+    width: 5vw;
+    position: absolute;
+    top: 1.75vh; /* Adjust the top position as needed */
+    left: 1.2vw; /* Adjust the left position as needed */
+    z-index: 3;
+}
+
+.links-content {
+    max-width: 1200px;
+    text-align: left;
+    margin-top: -1%;
+}
+
+.links-title {
+    font-size: 1.5vw;
+    text-align: center;
+    margin: 10px 0;
+    font-family: 'ltc-flash', sans-serif;
+    letter-spacing: 0.1em;
+    
+}
+
+.links-subtitle {
+    font-family: 'franklin-gothic-atf', sans-serif;
+    font-size: 4vw;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    margin: 10px 0;
+    text-align: center;
+    
+}
+
+.links-of {
+    font-size: 1.5vw;
+    text-align: center;
+    font-style: italic;
+    font-weight: 400;
+    margin: 5px 0;
+    
+}
+
+.links-main-title {
+    font-size: 3vw;
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'futura-pt', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    
+}
+
+.gothic-font {
+    font-family: 'franklin-gothic-atf', sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.links-list {
+    margin: 5vh 0;
+    font-size: 2vw;
+}
+
+.links-item {
+    margin: 3vh 0;
+}
+
+.links-category {
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.links-item a {
+    color: rgb(230, 230, 230);
+    text-decoration: underline;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.gif-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.links-gif {
+    width: 24%;
+    max-height: 300px;
+    margin: 2% 1%;
+}

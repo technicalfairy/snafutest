@@ -1,0 +1,107 @@
+body {
+    font-family: 'futura-pt', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: rgb(230, 230, 230);
+    text-align: left; /* Left-align text */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/background.png') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+}
+
+.home-button {
+    width: 5vw;
+    position: absolute;
+    top: 1.75vh; /* Adjust the top position as needed */
+    left: 1.2vw; /* Adjust the left position as needed */
+    z-index: 3;
+}
+
+.gothic-font {
+    font-family: 'franklin-gothic-atf', sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.howto-title {
+    font-size: 1.5vw;
+    text-align: center;
+    margin: 0px 0;
+    font-family: 'ltc-flash', sans-serif;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+    
+}
+
+.howto-subtitle {
+    font-size: 1.5vw;
+    text-align: center;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 1%;
+    margin-bottom: 1.2%;
+    
+}
+
+.howto-main-title {
+    font-size: 3vw;
+    text-align: center;
+    margin: 0px 0;
+    font-family: 'futura-pt', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    
+}
+
+.howto-content {
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 1%;
+}
+
+.howto-step-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.howto-step-content p {
+    width: 70%;
+    font-size: 1.75vw;
+    margin-top: 0px;
+    font-weight: 400;
+    
+}
+
+.howto-step h2 {
+    font-size: 1.75vw;
+    font-family: 'futura-pt', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin-bottom: -30px;
+    
+}
+
+.howto-gif {
+    width: 25%;
+    max-height: 400px;
+    margin-bottom: 40px;
+}

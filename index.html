@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNAFU Project</title>
+    <!-- Adobe Fonts Code Snippet -->
+    <link rel="stylesheet" href="https://use.typekit.net/twt0eyp.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <audio id="background-audio" loop>
+        <source src="images/song.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <a href="#" id="play-pause-button" class="play-button">
+        &#9658;
+    </a>
+    <div class="background"></div>
+    <div class="container">
+        <div class="box top-orange">
+            <p class="now-only-on-solana ink-bleed">NOW... <span class="underline">ONLY</span> ON SOLANA!</p>
+        </div>
+        <div class="box top-dark-pink">
+            <p class="situation-normal ink-bleed">SITUATION NORMAL:<br>ALL F_____ UP</p>
+        </div>
+        <div class="box top-purple">
+            <div class="svg-container">
+                <a href="gallery.html"><img id="svg1" class="svg-item" src="images/svg1.svg" alt="Gallery"></a>
+                <a href="history.html"><img id="svg2" class="svg-item" src="images/svg2.svg" alt="(HI)STORY"></a>
+                <a href="howto.html"><img id="svg3" class="svg-item" src="images/svg3.svg" alt="HOW TO $SNAFU?"></a>
+                <a href="links.html"><img id="svg4" class="svg-item" src="images/svg4.svg" alt="SOCIALS"></a>
+                <a href="plan.html"><img id="svg5" class="svg-item" src="images/svg5.svg" alt="THE PLAN"></a>
+            </div>
+        </div>
+        
+        <div class="blue-section">
+            <div class="svg-container-blue">
+                <img id="svg6" src="images/svg6.svg" alt="SVG Text" class="full-blue-svg">
+            </div>
+            <div class="middle-blue">
+                <img id="snafu-image" src="images/snafu_empty.png" alt="Private Snafu">
+                <img id="gif1" class="snafu-gif" src="images/gif1.gif" style="display:none;" alt="GIF 1">
+                <img id="gif2" class="snafu-gif" src="images/gif2.gif" style="display:none;" alt="GIF 2">
+                <img id="gif3" class="snafu-gif" src="images/gif3.gif" style="display:none;" alt="GIF 3">
+                <img id="gif4" class="snafu-gif" style="display:none;" src="images/gif4.gif" alt="GIF 4">
+                <img id="gif5" class="snafu-gif" style="display:none;" src="images/gif5.gif" alt="GIF 5">
+            </div>
+        </div>
+        <div class="box bottom-orange">
+            <p class="meaning-of-life ink-bleed">IT’S THE MEANING OF LIFE... SPELLED OUT!</p>
+        </div>
+        <div class="box bottom-yellow">
+            <div class="left-yellow">SOLSCAN,<a href="#" class="solscan-link"> 4K5...Pwm</a>, <a href="#" class="solscan-link"><a href="#" class="solscan-link">#277878612</a></div>
+            <div class="middle-yellow">FIND SNAFU ON ... <a href="#" class="find-us-on">X</a> ... <a href="#" class="find-us-on">TELEGRAM</a> ... <a href="#" class="find-us-on">DEXSCREENER</a></a></div>
+            <div class="right-yellow"><a href="secret.html"><img id="dog-image" src="images/dog.png" alt="Dog Drawing"></a></div>
+        </div>
+    </div>
+
+    <script>
+        // Hover Effects for SVGs
+        const snafuImage = document.getElementById('snafu-image');
+        const svgElements = document.querySelectorAll('.svg-item');
+        const gifs = ['gif1', 'gif2', 'gif3', 'gif4', 'gif5'];
+
+        svgElements.forEach((element, index) => {
+            element.addEventListener('mouseover', () => {
+                snafuImage.style.display = 'none';
+                document.getElementById(gifs[index]).style.display = 'block';
+            });
+            element.addEventListener('mouseout', () => {
+                snafuImage.style.display = 'block';
+                document.getElementById(gifs[index]).style.display = 'none';
+            });
+        });
+
+        // Play/Pause button functionality
+        const audio = document.getElementById('background-audio');
+        const playPauseButton = document.getElementById('play-pause-button');
+
+        playPauseButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (audio.paused) {
+                audio.play();
+                playPauseButton.innerHTML = '&#10074;&#10074;'; // This is the pause symbol
+            } else {
+                audio.pause();
+                playPauseButton.innerHTML = '&#9658;'; // This is the play symbol
+            }
+        });
+    </script>
+</body>
+</html>
