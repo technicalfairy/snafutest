@@ -18,8 +18,6 @@
             <p class="links-of2 ink-bleed">of</p>
             <h3 class="links-main-title ink-bleed">$SNAFU</h3>
             <div class="gallery-grid"></div>          
-                
-            </div>
         </div>
     </div>
     <script>
@@ -29,10 +27,10 @@
             let imgElement = document.createElement('img');
             imgElement.src = `https://snafucontent.s3.amazonaws.com/images/gallery/gallery${i}.${fileType}`;
             imgElement.alt = `Gallery ${i}`;
+            imgElement.loading = 'lazy';
             imgElement.classList.add('gallery-image');
             galleryGrid.appendChild(imgElement);
         }
     </script>
-
 </body>
 </html>
