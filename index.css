@@ -218,91 +218,80 @@ body {
     text-decoration: underline;
 }
 
-/* Mobile-Specific Adjustments */
+/* Responsive CSS for Mobile Screens Below 600px */
 @media (max-width: 600px) {
-    .history-title2,
-    .history-title,
-    .gothic-font,
-    .links-of2,
-    .links-main-title,
-    .follow-us,
-    .links {
-        font-size: 1.2em;
-        filter: none; /* Remove blur effects */
+    .now-only-on-solana {
+        font-size: 4vw; /* Adjust font size for mobile */
+        margin-top: 2vw;
     }
+
+    .situation-normal {
+        font-size: 8vw; /* Adjust font size for mobile */
+        margin-top: 3vw;
+    }
+
+    .svg-container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5vw;
+        margin-bottom: -3vw;
+    }
+
+    .svg-item {
+        height: 13vw;
+        margin: 5px 0;
+    }
+
+    .svg-container-blue {
+        display: none;
+    }
+
+    .full-blue-svg {
+        display: none;
+    }
+
+    .middle-blue {
+        width: 80%;
+        margin: auto;
+    }
+
+    .left-yellow {
+        display: none;
+    }
+
+    .middle-yellow {
+        display: none;
+    }
+
+    .right-yellow {
+        display: none;
+    }
+
+    .solscan-link,
+    .find-us-on {
+        font-size: 2vw; /* Adjust font size for mobile */
+    }
+
     .play-button {
-        font-size: 5vw;
-        filter: none; /* Remove blur effects */
-    }
-}
-
-/* Responsive Design */
-/*@media (max-width: 1000px) {
-    .now-only-on-solana, .situation-normal {
-        font-size: 1.5em;
+        font-size: 4vw; /* Adjust font size for mobile */
     }
 
-    .svg-item {
-        width: 80px;
-    }
-
-    .left-blue, .right-blue {
-        width: 25%;
-    }
-
-    .middle-blue {
-        width: 30%;
-    }
-}
-
-@media (max-width: 600px) {
-    .now-only-on-solana, .situation-normal {
-        font-size: 1.2em;
-    }
-
-    .svg-item {
-        width: 60px;
-    }
-
-    .left-blue, .right-blue {
-        width: 30%;
-    }
-
-    .middle-blue {
-        width: 40%;
-    }
-
+    .snafu-gif,
     #snafu-image {
-        max-width: 150px;
+        width: 100%;
     }
 
-    .left-yellow, .middle-yellow, .right-yellow {
-        width: 33.33%;
-    }
-}
-
-@media (max-width: 400px) {
-    .now-only-on-solana, .situation-normal {
-        font-size: 1em;
+    .box {
+        padding: 5px 0;
     }
 
-    .svg-item {
-        width: 50px;
+    .blue-section {
+        flex-direction: column;
+        padding: 5px 0;
     }
 
-    .left-blue, .right-blue {
-        width: 35%;
-    }
-
-    .middle-blue {
-        width: 30%;
-    }
-
-    #snafu-image {
-        max-width: 150px;
-    }
-
-    .left-yellow, .middle-yellow, .right-yellow {
-        width: 33.33%;
+    .meaning-of-life {
+        font-size: 4vw; /* Adjust font size to be relative to the viewport width */
+        margin-bottom: 2vw;
     }
 }
