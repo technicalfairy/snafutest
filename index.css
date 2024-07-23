@@ -222,7 +222,7 @@ body {
 @media (max-width: 600px) {
     .now-only-on-solana {
         font-size: 4vw; /* Adjust font size for mobile */
-        margin-top: 2vw;
+        margin-top: 3vw;
     }
 
     .situation-normal {
@@ -234,7 +234,7 @@ body {
         flex-direction: column;
         align-items: center;
         margin-top: 5vw;
-        margin-bottom: -3vw;
+        margin-bottom: 0vw;
     }
 
     .svg-item {
@@ -278,11 +278,12 @@ body {
 
     .snafu-gif,
     #snafu-image {
-        width: 100%;
+        width: 90%;
+        margin-top: -20px;
     }
 
     .box {
-        padding: 5px 0;
+        padding: 0px 0;
     }
 
     .blue-section {
@@ -292,6 +293,6 @@ body {
 
     .meaning-of-life {
         font-size: 4vw; /* Adjust font size to be relative to the viewport width */
-        margin-bottom: 2vw;
+        margin-bottom: 3vw;
     }
 }
