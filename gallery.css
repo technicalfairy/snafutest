@@ -94,3 +94,43 @@ body {
     width: 100%;
     object-fit: cover;
 }
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+    .gallery-image {
+        width: 100%; /* Ensure images fit within the grid cells */
+    }
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Three columns layout */
+        gap: 10px; /* Adjust the gap as needed */
+    }
+
+    .home-button {
+        width: 12vw;
+        top: 10px; /* Adjusted position for better visibility on mobile */
+        left: 10px; /* Adjusted position for better visibility on mobile */
+    }
+
+    .history-title {
+        font-size: 5vw;
+    }
+
+    .gothic-font {
+        font-size: 6vw;
+    }
+
+    .history-title2 {
+        font-size: 3vw;
+        margin-top: 10px;
+    }
+
+    .links-of2 {
+        font-size: 4vw;
+    }
+
+    .links-main-title {
+        font-size: 5vw;
+    }
+}
