@@ -133,3 +133,49 @@ body {
     width: 100%;
     height: auto;
 }
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+    .history-title2 {
+        font-size: 2vw;
+        margin-top: 2vw;
+    }
+    
+    .links-of2 {
+        font-size: 4vw;
+        margin-top: -5px;
+        margin-bottom: 3%;
+    }
+    
+    .links-main-title {
+        font-size: 5vw;
+    }
+    
+    .history-title {
+        font-size: 5vw;
+        margin-top: 5px;
+    }
+    
+    
+    .history-text {
+        font-size: 3.5vw;
+        margin: 10px 0;
+        line-height: 1.75;
+    }
+
+    .home-button {
+        width: 10vw;
+        margin-top: -10px;
+        margin-left: 3px;
+    }
+
+    .play-button {
+        margin-top: -8px;
+        font-size: 4vw;
+    }
+
+    .flash-font {
+        font-size: 2em;
+    }
+}
+
