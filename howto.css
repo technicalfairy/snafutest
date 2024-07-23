@@ -41,6 +41,16 @@ body {
     letter-spacing: 0.1em;
 }
 
+.howto-title1 {
+    font-size: 1.5vw;
+    text-align: center;
+    margin: 0px 0;
+    font-family: 'ltc-flash', sans-serif;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+    
+}
+
 .howto-title {
     font-size: 1.5vw;
     text-align: center;
@@ -83,6 +93,10 @@ body {
     justify-content: space-between;
 }
 
+.howto-step-content a {
+    color: inherit; /* This will inherit the color from the parent element */
+}
+
 .howto-step-content p {
     width: 70%;
     font-size: 1.75vw;
@@ -97,7 +111,6 @@ body {
     font-weight: 600;
     letter-spacing: 0.05em;
     margin-bottom: -30px;
-    
 }
 
 .howto-gif {
@@ -172,4 +185,3 @@ body {
 
     }
 }
-
