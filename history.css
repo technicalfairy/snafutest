@@ -138,12 +138,12 @@ body {
 @media (max-width: 600px) {
     .history-title2 {
         font-size: 2vw;
-        margin-top: 2vw;
+        margin-top: 3vw;
     }
     
     .links-of2 {
         font-size: 4vw;
-        margin-top: -5px;
+        margin-top: 0px;
         margin-bottom: 3%;
     }
     
@@ -153,7 +153,7 @@ body {
     
     .history-title {
         font-size: 5vw;
-        margin-top: 5px;
+        margin-top: 10px;
     }
     
     
@@ -164,18 +164,19 @@ body {
     }
 
     .home-button {
-        width: 10vw;
+        width: 12vw;
         margin-top: -10px;
         margin-left: 3px;
     }
 
     .play-button {
         margin-top: -8px;
-        font-size: 4vw;
+        font-size: 5vw;
     }
 
     .flash-font {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 }
+
 
