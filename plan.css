@@ -118,3 +118,71 @@ body {
     width: 100%;
     height: auto;
 }
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+    .history-title2 {
+        font-size: 2vw;
+        margin-top: 3vw;
+    }
+    
+    .links-of2 {
+        font-size: 4vw;
+        margin-top: 0px;
+        margin-bottom: 3%;
+    }
+    
+    .links-main-title {
+        font-size: 5vw;
+        margin-bottom: 20px;
+    }
+    
+    .history-title {
+        font-size: 5vw;
+        margin-top: 10px;
+    }
+
+    .gif-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .gif {
+        width: 100%;
+        height: auto;
+    }
+
+    .home-button {
+        width: 12vw;
+        margin-top: -10px;
+        margin-left: 3px;
+    }
+
+    .play-button {
+        margin-top: -8px;
+        font-size: 5vw;
+    }
+
+    .flash-font {
+        font-size: 1.5em;
+    }
+
+    .svg-container {
+        width: 85%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .plan-svg {
+        width: 90vw; /* Adjust this value as needed */
+        max-width: none; /* Remove the max-width restriction */
+        margin-top: 2vw; /* Adjust the margin as needed */
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px; /* Adjust the bottom margin as needed */
+    }
+}
