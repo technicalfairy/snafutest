@@ -99,12 +99,14 @@ body {
 }
 
 .left-yellow {
+    font-size: 1vw;
     width: 30%;
     text-align: left; /* Align text to the left */
     padding-left: 20px; /* Add some padding to the left */
 }
 
 .middle-yellow {
+    font-size: 1vw;
     width: 30%;
     text-align: center;
 }
@@ -164,6 +166,9 @@ body {
     text-align: left;
     color: rgb(230, 230, 230); /* Set text color to white */
     text-decoration: underline; /* Ensure text is underlined */
+    pointer-events: none;
+    color: inherit; /* Ensures the link retains the same text color as the surrounding text */
+    opacity: 50%;
 }
 
 .find-us-on {
@@ -216,6 +221,13 @@ body {
 
 .underline {
     text-decoration: underline;
+}
+
+.deactivated-link {
+    pointer-events: none;
+    color: inherit; /* Ensures the link retains the same text color as the surrounding text */
+    opacity: 50%;
+    text-decoration: none; /* Optional: Removes the underline from the link */
 }
 
 /* Responsive CSS for Mobile Screens Below 600px */
