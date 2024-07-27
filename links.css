@@ -118,6 +118,14 @@ body {
     margin: 2% 1%;
 }
 
+.deactivated-link {
+    pointer-events: none;
+    color: inherit; /* Ensures the link retains the same text color as the surrounding text */
+    opacity: 50%;
+    text-decoration: none; /* Optional: Removes the underline from the link */
+}
+
+
 /* Mobile-specific styles */
 @media (max-width: 600px) {
     
