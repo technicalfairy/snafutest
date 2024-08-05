@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="https://snafucontent.s3.amazonaws.com/snafu_favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posters - SNAFU Project</title>
+    <link rel="stylesheet" href="https://use.typekit.net/twt0eyp.css">
+    <link rel="stylesheet" href="posters.css">
+</head>
+<body>
+    <a href="index.html"><img src="https://snafucontent.s3.amazonaws.com/images/history17.png" alt="Home" class="home-button"></a>
+    <div class="background"></div>
+    <div class="container">
+        <div class="gallery-content">
+            <h1 class="history-title2 ink-bleed"><span class="flash-font">JUST LIKE OLD, BUT NEW!</span></h1>
+            <h1 class="history-title ink-bleed"><span class="gothic-font smaller-story">SNAFU</span></h1>
+            <p class="links-of2 ink-bleed">PROPAGANDA</p>
+            <h3 class="links-main-title ink-bleed">POSTERS</h3>
+            <div class="gallery-grid"></div>          
+        </div>
+    </div>
+    <script>
+        const galleryGrid = document.querySelector('.gallery-grid');
+        for (let i = 1; i <= 23; i++) {  // Adjust the number based on your total posters
+            let imgElement = document.createElement('img');
+            imgElement.src = `https://snafucontent.s3.amazonaws.com/images/posters/poster${i}.jpg`; // Assuming your images are named poster1.jpg, poster2.jpg, etc.
+            imgElement.alt = `Poster ${i}`;
+            imgElement.loading = 'lazy';
+            imgElement.classList.add('gallery-image');
+            galleryGrid.appendChild(imgElement);
+        }
+    </script>
+</body>
+</html>
