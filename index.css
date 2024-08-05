@@ -144,7 +144,7 @@ body {
 }
 
 .svg-item {
-    height: 7vw;
+    height: 6vw;
     margin: 0 10px;
     cursor: pointer;
 }
@@ -306,5 +306,9 @@ body {
     .meaning-of-life {
         font-size: 4vw; /* Adjust font size to be relative to the viewport width */
         margin-bottom: 3vw;
+    }
+
+    #svg1 {
+        display: none;
     }
 }
