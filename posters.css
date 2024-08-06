@@ -3,7 +3,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
-    color: white;
+    color: rgb(230, 230, 230);
+    text-align: left; /* Left-align text */
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
@@ -22,9 +23,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 100%; /* Ensure the container takes up the full height */
-    position: relative;
+    padding: 0px;
 }
 
 .home-button {
@@ -35,40 +34,103 @@ body {
     z-index: 3;
 }
 
-.secret-title {
-    font-size: 1.5vw;
+.history-title {
+    font-size: 3vw;
     text-align: center;
-    margin: 10px 0; /* Reduced margin to bring it closer to the top */
+    margin: 10px 0;
+    letter-spacing: 0.1em;
+}
+
+.gothic-font {
+    font-family: 'franklin-gothic-atf', sans-serif;
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+.history-title2 {
+    font-size: 1vw;
+    text-align: center;
+    margin: 0px 0;
     font-family: 'ltc-flash', sans-serif;
     letter-spacing: 0.1em;
-    
 }
 
-.secret-content {
+.links-of2 {
+    font-size: 1.5vw;
+    text-align: center;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 1%;
+}
+
+.links-main-title {
+    font-size: 3vw;
+    text-align: center;
+    margin: 0px 0;
+    font-family: 'futura-pt', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+.flash-font {
+    font-family: 'ltc-flash', sans-serif;
+}
+
+.gallery-content {
     width: 90%;
     max-width: 1200px;
-    margin-top: 1%;
-    text-align: center;
+    margin-top: 1vh;
 }
 
-.secret-subtitle {
-    font-size: 3vw;
-    font-weight: 700;
-    text-decoration: line-through;
-    margin: 10px 0; /* Reduced margin to bring it closer to the top */
-    
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px 0;
 }
 
-.secret-text {
-    font-size: 1.5vw;
-    line-height: 2;
-    text-align: left;
-    margin: 10px 0; /* Reduced margin to bring it closer to the top */
-    
+.gallery-image {
+    width: 100%;
+    object-fit: cover;
 }
 
-.secret-image {
-    width: 10%;
-    height: auto;
-    margin-top: 20px;
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+    .gallery-image {
+        width: 100%; /* Ensure images fit within the grid cells */
+    }
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Three columns layout */
+        gap: 10px; /* Adjust the gap as needed */
+    }
+
+    .home-button {
+        width: 12vw;
+        top: 10px; /* Adjusted position for better visibility on mobile */
+        left: 10px; /* Adjusted position for better visibility on mobile */
+    }
+
+    .history-title {
+        font-size: 5vw;
+    }
+
+    .gothic-font {
+        font-size: 6vw;
+    }
+
+    .history-title2 {
+        font-size: 3vw;
+        margin-top: 10px;
+    }
+
+    .links-of2 {
+        font-size: 4vw;
+    }
+
+    .links-main-title {
+        font-size: 5vw;
+    }
 }
