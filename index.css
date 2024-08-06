@@ -252,6 +252,11 @@ body {
     .svg-item {
         height: 13vw;
         margin: 5px 0;
+        pointer-events: none;
+    }
+
+    .svg-item:hover + .snafu-gif {
+        display: none !important; /* Ensure GIFs don't display on hover */
     }
 
     .svg-container-blue {
@@ -260,6 +265,14 @@ body {
 
     .full-blue-svg {
         display: none;
+    }
+
+    #snafu-image {
+        display: block !important; /* Ensure the static image is always visible */
+    }
+
+    .snafu-gif {
+        display: none !important; /* Ensure GIFs are always hidden */
     }
 
     .middle-blue {
