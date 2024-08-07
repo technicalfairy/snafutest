@@ -24,9 +24,16 @@
     <script>
         const galleryGrid = document.querySelector('.gallery-grid');
         for (let i = 1; i <= 189; i++) {
-            let fileType = (i <= 102) ? 'gif' : 'png';
+            let fileType, fileName;
+            if (i <= 102) {
+                fileType = 'gif';
+                fileName = `gallerysmallgif${i}`;
+            } else {
+                fileType = 'png';
+                fileName = `gallerysmallpng${i}`;
+            }
             let imgElement = document.createElement('img');
-            imgElement.src = `https://snafucontent.s3.amazonaws.com/images/gallery/gallery${i}.${fileType}`;
+            imgElement.src = `https://snafucontent.s3.amazonaws.com/images/gallery/${fileName}.${fileType}`;
             imgElement.alt = `Gallery ${i}`;
             imgElement.loading = 'lazy';
             imgElement.classList.add('gallery-image');
