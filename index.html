@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/twt0eyp.css">
     <link rel="stylesheet" href="index.css">
 </head>
-<body>
+<body class="blurred">
     <audio id="background-audio" loop>
         <source src="https://snafucontent.s3.amazonaws.com/images/song.mp3" type="audio/mp3">
         Your browser does not support the audio element.
@@ -17,6 +17,18 @@
     <a href="#" id="play-pause-button" class="play-button">
         &#9658;
     </a>
+
+    <!-- Welcome Message -->
+    <div id="welcome-message" class="welcome-message">
+        <div class="welcome-content">
+            <h2 class="ink-bleed">WELCOME PRIVATE!</h2>
+            <p>Here you will find everything there is to know about $SNAFU.</p>
+            <p>Remember, this is just for entertainment. Memecoins are volatile, the trenches are as dangerous as they are glorious. Expect nothing, embrace everything: that’s SNAFU!</p>
+            <p>Stay safu and don’t get booby-trapped. The only official links and announcements will be shown here and on X.</p>
+            <span id="close-welcome" class="close-button">x</span>
+        </div>
+    </div>
+
     <div class="background"></div>
     <div class="container">
         <div class="box top-orange">
@@ -58,11 +70,6 @@
             <div class="middle-yellow">FIND SNAFU ON ... <a href="https://x.com/snafutoken" target="_blank" class="find-us-on"> X</a> ... <a href="https://t.me/snafutoken" target="_blank" class="find-us-on">TELEGRAM</a><!-- ... <a href="https://dexscreener.com/solana/" target="_blank" class="find-us-on">DEXSCREENER--></a></a></div>
             <div class="right-yellow"><a href="secret.html"><img id="dog-image" src="https://snafucontent.s3.amazonaws.com/images/dog.png" alt="Dog Drawing"></a></div>
             </div>
-
-            
-            
-        
-        </div>
     </div>
 
     <script>
@@ -96,6 +103,18 @@
                 playPauseButton.innerHTML = '&#9658;'; // This is the play symbol
             }
         });
+
+        // Dismiss welcome message
+        const welcomeMessage = document.getElementById('welcome-message');
+        const closeWelcomeButton = document.getElementById('close-welcome');
+
+        function closeWelcome() {
+            welcomeMessage.style.display = 'none';
+            document.body.classList.remove('blurred');
+        }
+
+        closeWelcomeButton.addEventListener('click', closeWelcome);
+        welcomeMessage.addEventListener('click', closeWelcome);
     </script>
 </body>
 </html>
