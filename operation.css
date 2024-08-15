@@ -1,0 +1,187 @@
+body {
+    font-family: 'futura-pt', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: rgb(230, 230, 230);
+    text-align: left; /* Left-align text */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://snafucontent.s3.amazonaws.com/images/background.png') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+}
+
+.home-button {
+    width: 5vw;
+    position: absolute;
+    top: 1.75vh; /* Adjust the top position as needed */
+    left: 1.2vw; /* Adjust the left position as needed */
+    z-index: 3;
+}
+
+.gothic-font {
+    font-family: 'franklin-gothic-atf', sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.operation-title1 {
+    font-size: 1.5vw;
+    text-align: center;
+    margin: 0px 0;
+    font-family: 'ltc-flash', sans-serif;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+}
+
+.operation-title {
+    font-size: 1.5vw;
+    text-align: center;
+    margin: 0px 0;
+    font-family: 'ltc-flash', sans-serif;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+}
+
+.operation-title3 {
+    font-size: 1.5vw;
+    text-align: center;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.operation-title4 {
+    font-size: 2vw;
+    text-align: center;
+    margin: 0px 0;
+    margin-bottom: 2vh;
+    font-family: 'futura-pt', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+.operation-content {
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex;
+    padding: 10px 5%; /* Adjust padding to ensure there's enough space */
+    max-width: 80%; /* Adjust the max-width if needed */
+    margin: 0 auto; /* Center the content */
+}
+
+.operation-step {
+    margin-bottom: 0px; /* Add spacing between steps */
+    font-size: 1.25vw;
+}
+
+.operation-step-content p {
+    font-size: 1.75vw;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    line-height: 1.4; /* Adjust line-height to add more space between lines */
+    width: 100%; /* Ensure the text takes up the full width available */
+}
+
+.bracketed-text {
+    font-size: 1.75vw;
+    font-weight: 400;
+    color: rgb(230, 230, 230);
+}
+
+.gif-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.history-gif {
+    width: 23.5%;
+    max-height: 300px;
+    margin: 0 1%;
+}
+
+.airdrop-link {
+    color: inherit;
+}
+
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+    .home-button {
+        width: 12vw;
+        top: 10px;
+        left: 10px;
+    }
+
+    .operation-title1 {
+        font-size: 3vw;
+        margin-top: -5px;
+        margin-bottom: 12px;
+    }
+
+    .operation-title {
+        font-size: 2.5vw;
+        margin-bottom: 5px;
+    }
+
+    .gothic-font {
+        font-size: 2em;
+    }
+
+    .operation-title3 {
+        font-size: 2.5vw;
+        margin-top: 2vw;
+        margin-bottom: 3%;
+    }
+
+    .operation-title4 {
+        font-size: 4vw;
+        margin-bottom: 5px;
+    }
+
+    .operation-content {
+        width: 95%;
+        margin-top: 5%;
+        padding: 5px 10px; /* Adjust padding for mobile */
+        max-width: 90%; /* Ensure it's centered and has enough space on mobile */
+    }
+
+    .operation-step {
+        margin-bottom: 0px; /* Add spacing between steps */
+        font-size: 2vw;
+    }
+
+    .operation-step-content p {
+        font-size: 3vw; /* Increase font-size for readability on mobile */
+        line-height: 1.5; /* Adjust line-height to avoid overlap */
+        margin-bottom: 4vw;
+    }
+
+    .gif-row {
+       margin-bottom: 20px;
+    }
+
+
+}
