@@ -166,9 +166,8 @@ body {
     text-align: left;
     color: rgb(230, 230, 230); /* Set text color to white */
     text-decoration: underline; /* Ensure text is underlined */
-    pointer-events: none;
     color: inherit; /* Ensures the link retains the same text color as the surrounding text */
-    opacity: 50%;
+    opacity: 100%;
 }
 
 .find-us-on {
@@ -222,14 +221,6 @@ body {
 .underline {
     text-decoration: underline;
 }
-
-.deactivated-link {
-    pointer-events: none;
-    color: inherit; /* Ensures the link retains the same text color as the surrounding text */
-    opacity: 50%;
-    text-decoration: none; /* Optional: Removes the underline from the link */
-}
-
 
 /* Welcome Message */
 .welcome-message {
